@@ -9,9 +9,9 @@ import FaceRecognition from '../components/faceRecognition/faceRecognition.js';
 import SignIn from '../components/signIn/signIn.js';
 import Register from '../components/register/register.js';
 import Scoreboard from '../components/scoreboard/scoreboard.js';
+import Footer from '../components/footer/footer.js';
 
 import Particles from 'react-particles-js';
-import Footer from '../components/footer/footer';
 
 class App extends Component {
   constructor(){
