@@ -10,6 +10,7 @@ import SignIn from '../components/signIn/signIn.js';
 import Register from '../components/register/register.js';
 import Scoreboard from '../components/scoreboard/scoreboard.js';
 import Footer from '../components/footer/footer.js';
+import About from '../components/about/about.js';
 
 import Particles from 'react-particles-js';
 
@@ -154,12 +155,15 @@ class App extends Component {
             <ImageLinkForm inputChange={this.onInputChange} buttonSubmit={this.onButtonSubmit} clearInput={this.clearInput}/>
             <FaceRecognition peoples={peoples} url={imageUrl}/>  {/*new*/}  
           </div>
-        : ( route === 'scoreboard'
-          ? <Scoreboard userName={user.name}/>
-          : ( route === 'signin' || route === 'signout'
-            ?<SignIn loadUser={this.loadUser}onRouteChange={this.onRouteChange}/>
-            :<Register loadUser={this.loadUser} onRouteChange={this.onRouteChange}/> 
-            )
+        : ( route === 'about'
+          ? <About/>
+          : ( route === 'scoreboard'
+            ? <Scoreboard userName={user.name}/>
+            : ( route === 'signin' || route === 'signout'
+              ?<SignIn loadUser={this.loadUser}onRouteChange={this.onRouteChange}/>
+              :<Register loadUser={this.loadUser} onRouteChange={this.onRouteChange}/> 
+              )
+            )          
           )
         }
         <Footer/>

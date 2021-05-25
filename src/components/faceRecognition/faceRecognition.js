@@ -4,7 +4,7 @@ import './faceRecognition.css';
 
 const FaceRecognition = ({url, peoples}) => {
     return (
-        <div className="center ma3 vh-100">
+        <div className="center ma3 vh-75">
             <div className='absolute mt2'>
                 <img id='inputImage' src={url} alt='' width='500px' height='auto'>
                 </img>   

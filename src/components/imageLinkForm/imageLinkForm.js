@@ -29,7 +29,7 @@ class ImageLinkForm extends React.Component {
                 </p>
                 <div className="flex center">
                     <div className='pa3 br3 shadow-5 w-90 center' style={objectstyle.div}>
-                        <input id='input' type='text' className='f4 pa2 w-70 w-60-m w-50-s center' onChange={inputChange} onKeyPress={this.onKeyUp}></input>
+                        <input id='input' type='text' className='f4 pa2 w-70 w-60-m w-50-s center' placeholder="Insert image URL here..."onChange={inputChange} onKeyPress={this.onKeyUp}></input>
                         
                         <button id='submit' className='w-20 w-30-m w-50-s grow f4 f5-m f6-s link pa2 ph3 dib white bg-light-purple' onClick={()=>{buttonSubmit(); clearInput();}}>Detect</button>
                     </div>    
