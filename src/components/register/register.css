@@ -1,0 +1,32 @@
+.circle {
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+}
+.bgred {
+    background-color: #ff0000;
+}
+.bgorange {
+    background-color: #ffa500;
+}
+.bgyellow {
+    background-color: #ffff00;
+}
+.bggreen {
+    background-color: #1eff00
+}
+.bgblue {
+    background-color: #0000ff;
+}
+.bgpink {
+    background-color: #ffc0cb;
+}
+.bgpurple {
+    background-color: #ce00ce; 
+}
+.selected {
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    border-radius: 50%;
+}
