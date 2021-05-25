@@ -11,6 +11,7 @@ import Register from '../components/register/register.js';
 import Scoreboard from '../components/scoreboard/scoreboard.js';
 
 import Particles from 'react-particles-js';
+import Footer from '../components/footer/footer';
 
 class App extends Component {
   constructor(){
@@ -84,7 +85,6 @@ class App extends Component {
         })
       })
       .then(response=> response.json())
-      // app.models.predict(Clarifai.FACE_DETECT_MODEL,this.state.input)
       .then(resp => {
         console.log('response: ', resp);
         this.setState({peoples:  resp.outputs[0].data.regions})  //new
@@ -104,7 +104,6 @@ class App extends Component {
           })
           .catch(err=> console.log('Error updating score', err))
         }
-        //this.displayFaceBox(this.calculateFaceLocation(resp));
       })
       .then(()=>this.setState({input:''}))
       .catch(() => alert('Please insert valid image URL'));
@@ -161,6 +160,7 @@ class App extends Component {
             )
           )
         }
+        <Footer/>
       </div>
     )
   }
