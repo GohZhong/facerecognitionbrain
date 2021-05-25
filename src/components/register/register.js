@@ -43,7 +43,6 @@ class Register extends React.Component {
 
     onRegister = () => {
         const { registerName, registerEmail, registerPassword, registerColour } = this.state;
-        console.log(this.state);
         if (registerName && registerEmail && registerPassword){
             fetch('https://pacific-waters-46506.herokuapp.com/register',{
                 method: 'post',

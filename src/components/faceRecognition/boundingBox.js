@@ -1,6 +1,6 @@
 import React from 'react';
 
-const BoundingBox = ({boundingBox, people}) => {
+const BoundingBox = ({people}) => {
     const faceLocation= (people)=> {
         const clarifaiFace = people.region_info.bounding_box;
         const image = document.getElementById('inputImage');

@@ -47,11 +47,11 @@ class App extends Component {
     })
   }
 
-  componentDidMount(){
-    fetch('https://pacific-waters-46506.herokuapp.com/')
-    .then(response => response.json())
-    .then((data)=>console.log(data))
-  }
+  // componentDidMount(){
+  //   fetch('https://pacific-waters-46506.herokuapp.com/')
+  //   .then(response => response.json())
+  //   .then((data)=>console.log(data))
+  // }
 
   onRouteChange = (route) => {
     if (route === 'signout') {
@@ -107,6 +107,8 @@ class App extends Component {
       })
       .then(()=>this.setState({input:''}))
       .catch(() => alert('Please insert valid image URL'));
+    } else {
+      alert('Please insert valid image URL')
     } 
   }
   
