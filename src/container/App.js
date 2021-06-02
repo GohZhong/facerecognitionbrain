@@ -134,7 +134,7 @@ class App extends Component {
           }
         },
         number: {
-          value: 30,
+          value: 50,
           density: {
             enable: true,
             value_area: 1000
@@ -160,7 +160,7 @@ class App extends Component {
           : ( route === 'scoreboard'
             ? <Scoreboard userName={user.name}/>
             : ( route === 'signin' || route === 'signout'
-              ?<SignIn loadUser={this.loadUser}onRouteChange={this.onRouteChange}/>
+              ?<SignIn loadUser={this.loadUser} onRouteChange={this.onRouteChange}/>
               :<Register loadUser={this.loadUser} onRouteChange={this.onRouteChange}/> 
               )
             )          
